@@ -1,0 +1,14 @@
+.thumbnail {
+    border: none;
+    padding-bottom: 10px;
+    transition: transform 0.5s;
+}
+.thumbnail img{
+    width: 110px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.thumbnail:hover {
+    transform: scale(1.1,1.1);
+    background-color: whitesmoke;
+}
