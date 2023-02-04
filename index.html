@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="resources/js/commons.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Aniket Kumar</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#" onclick="reset()">Portfolio</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toogle" data-toggle="dropdown">Contact
+                        <span class="caret"></span>
+                      </a>
+                     
+                      <ul class="dropdown-menu" style="background-color:rgb(204, 203, 203); color: white;">
+                        <li >
+                          <a href="mailto: aniketkr08903@gmail.com">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            aniketkr08903@gmail.com
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/aniket-kumar-469465231/">
+                            LinkedIn
+                          </a>
+                        </li>
+                      </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--Portfolio Section-->
+          <div class="container-fluid text-center bg-grey" id="portfolio-section">
+            <h2>Portfolio</h2>
+            <h3></h3>
+            <div class="row text-center" id="portfolio-container" style="margin-top:40px;">
+              <div class="col-sm-3 all web">
+                <div class="thumbnail">
+                  <img src="resources/img/hrIcon.png" alt="HR Data Dashboard Icon">
+                  <p><strong>HR_Dashboard</strong></p>
+                  <p>An application to manage HR work</p>
+                  <p>Technologies and Languages: html, css ,js and bootstrap</p>
+                  <a href="https://github.com/AniOking/JPDB-HR_LOGIN"><span class="glyphicon glyphicon-link"></span></a>
+                </div>
+              </div>
+              <div class="col-sm-3 all web">
+                <div class="thumbnail">
+                  <img src="resources/img/dashboardIcon.png" alt="Data Dashboard Icon">
+                  <p><strong>Data_Dashboard</strong></p>
+                  <p>An application for testing and development</p>
+                  <p>Technologies and Languages: html, css ,js and bootstrap</p>
+                  <a href="https://github.com/AniOking/JPDBDashboardApplication"><span class="glyphicon glyphicon-link"></span></a>
+                </div>
+              </div>
+
+              <div class="col-sm-3 all ml">
+                <div class="thumbnail">
+                  <img src="resources/img/spamModel.jpg" alt="Spam Model Image">
+                  <p><strong>Spam Detection Model</strong></p>
+                  <p>This model predict whether the given text message is spam or not</p>
+                  <p>Technologies and Languages: python and NLP</p>
+                  <a href="https://github.com/AniOking/SpamDetectionModel"><span class="glyphicon glyphicon-link"></span></a>
+                </div>
+              </div>
+              <div class="col-sm-3 all ml">
+                <div class="thumbnail">
+                  <img src="resources/img/cancer.png" alt="Cancer Detection Icon">
+                  <p><strong>Cancer Detection Model</strong></p>
+                  <p>This model predict whether a person has symptoms of cancer or not</p>
+                  <p>Technologies and Languages: python,deep learning and keras</p>
+                  <a href="https://github.com/AniOking/CANCER_DETECTION_MODEL"><span class="glyphicon glyphicon-link"></span></a>
+                </div>
+              </div>
+              <div class="col-sm-3 all app">
+                <div class="thumbnail">
+                  <img src="resources/img/library.jpg" alt="LMS Icon">
+                  <p><strong>Library Management System</strong></p>
+                  <p>An application to manage Library Work</p>
+                  <p>Technologies and Languages: java, mysql database and swing API</p>
+                  <a href="https://github.com/AniOking/LibraryManagement"><span class="glyphicon glyphicon-link"></span></a>
+                </div>
+              </div>
+
+              <div class="col-sm-3 all app">
+                <div class="thumbnail">
+                  <img src="resources/img/xmlcsv.jpg" alt="xml to csv icon">
+                  <p><strong>XML-TO-CSV</strong></p>
+                  <p>An application to convert xml to csv file</p>
+                  <p>Technologies and Languages: python and pandas</p>
+                  <a href="https://github.com/AniOking/xmlCsvConverter"><span class="glyphicon glyphicon-link"></span></a>
+                </div>
+              </div>
+              <div class="col-sm-3 all app">
+                <div class="thumbnail">
+                  <img src="resources/img/medico.jpg" alt="medico icon">
+                  <p><strong>Medico</strong></p>
+                  <p>An application to manage Medicine</p>
+                  <p>Technologies and Languages: C</p>
+                  <a href="https://github.com/AniOking/Medico"><span class="glyphicon glyphicon-link"></span></a>
+                </div>
+              </div>
+
+              <div class="col-sm-3 portfolio-cat">
+                <div class="thumbnail">
+                  <img src="resources/img/all.png" alt="All Icon" onclick="portfolioSort('all')">
+                  <p><strong>ALL</strong></p>
+                  <p>All applications and models.</p>
+                </div>
+              </div>
+              <div class="col-sm-3 portfolio-cat">
+                <div class="thumbnail">
+                  <img src="resources/img/mlIcon.png" alt="ML Icon" onclick="portfolioSort('ml')">
+                  <p><strong>ML Model</strong></p>
+                  <p>Trained model to recognize certain type of patterns.</p>
+                </div>
+              </div>
+              <div class="col-sm-3 portfolio-cat">
+                <div class="thumbnail">
+                  <img src="resources/img/webIcon.png" alt="WebApp Icon" onclick="portfolioSort('web')">
+                  <p><strong>Web Application</strong></p>
+                  <p>Web Apps accessed using web browser.</p>
+                </div>
+              </div>
+              <div class="col-sm-3 portfolio-cat">
+                <div class="thumbnail">
+                  <img src="resources/img/appIcon.png" alt="App Icon" onclick="portfolioSort('app')">
+                  <p><strong>Software Application</strong></p>
+                  <p>Performs bussiness fucntions.</p>
+                </div>
+              </div>
+          </div>
+          <script>
+            $(".all").hide();
+          </script>
+    </body>
+</html>
